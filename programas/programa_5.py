@@ -18,11 +18,11 @@ while True:                           # Bucle infinito
         music.play(music.RINGTONE)
         
         for i in range(5):               # Repite 5 veceso seguinte bloque
+            display.show(Image.ANGRY)    # Mostra unha cara enfadada na pantalla da microbit  
             np[0] = (0, 255, 0)          # Acende o LED NeoPixel en vermello
             np[1] = (0, 255, 0)
             np.show()                    # Mostra o cambio do color no LED
             led.write_digital(1)         # Acende o LED branco conectadoao pin 14
-            display.show(Image.ANGRY)    # Mostra unha cara enfadada na pantalla da microbit    
             sleep(500)                   # Espera 500 milisegundos
             np[0] = (0, 0, 0)            # Apaga o LED NeoPixel
             np[1] = (0, 0, 0)
