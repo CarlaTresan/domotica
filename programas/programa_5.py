@@ -8,9 +8,10 @@ import music
 
 np = neopixel.NeoPixel(pin13, 2)    # Crea unha tira de 1 LED NeoPixel conectado ao pin 13
 led = pin14                         # Define o pin 14 como "led"
-sensor = pin15.read_digital()       # Define o pin 15 como "sensor"
+
 
 while True:                           # Bucle infinito
+    sensor = pin15.read_digital()       # Define o pin 15 como "sensor"
     if sensor == 1:                   # Se o sensor PÎR detecta movemento
         music.play(music.RINGTONE)       # Reproduce un ton de llamada
         sleep(500)     
