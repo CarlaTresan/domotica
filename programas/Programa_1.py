@@ -1,7 +1,7 @@
 
 
 
-from microbit import*
+from microbit import *
 import neopixel
 
 np = neopixel.NeoPixel(pin13, 1)
@@ -17,5 +17,5 @@ while True:
         np[0] = (255, 0, 0)
         rele.write_digital(0)
 
-  np.show()
-  sleep(1000)
+np.show()
+sleep(1000)
