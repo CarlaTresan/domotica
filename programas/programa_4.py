@@ -1,4 +1,4 @@
-from microbit import *
+from microbit import*
 
 # Ángulo actual del servo (0 o 90)
 angulo = 0
